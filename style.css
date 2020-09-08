@@ -339,6 +339,14 @@ footer
 
 
             /* To make the elements as responsive as possible */
+@media screen and (max-width: 1800px)
+{
+    .programmer-img
+    {
+        width: 28%;
+    }
+}
+
 @media screen and (max-width: 1200px)
 {
     /* For the curve div at the top */
@@ -432,6 +440,7 @@ footer
     
     .icons
     {
+        padding-left: 35vw;
         height: 100px;
     }
 }
