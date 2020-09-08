@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=UTF-8 />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Simas' Portfolio</title>
+        <meta name="description" content="Porfolio website of my work as a computer scientist">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Personal Website, Portfolio, Programmer, Computer Science, Simas, Simas Cesnauskas, Design">
+        <meta name="author" content="Simas Cesnauskas">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="Images/logo.png">
+    </head>
+    
+    
+    <body>
+        <!-- For the navigation bar of the page-->
+        <nav>
+            <li><a href="#contactMe">Contact</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+        </nav>
+        
+        
+        
+        
+        <!-- The main curve where my name is -->
+        <div class="curve">
+            <!-- For the upper svg curve generated from https://getwaves.io/-->
+            <svg viewBox="0 0 1440 319"><path fill-opacity="1" d="M0,32L40,48C80,64,160,96,240,112C320,128,400,128,480,128C560,128,640,128,720,154.7C800,181,880,235,960,240C1040,245,1120,203,1200,202.7C1280,203,1360,245,1400,266.7L1440,288L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+            <h1>Simas Cesnauskas</h1>
+            <h2>Computer Pro<span class="outline_text">grammer</span></h2>
+            <!-- For the lower svg curve generated from https://getwaves.io/-->
+            <svg viewBox="0 0 1440 319"><path fill-opacity="1" d="M0,32L40,48C80,64,160,96,240,112C320,128,400,128,480,128C560,128,640,128,720,154.7C800,181,880,235,960,240C1040,245,1120,203,1200,202.7C1280,203,1360,245,1400,266.7L1440,288L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+        </div>
+        
+        
+        
+        
+        <!-- The sections talking about my interests -->
+        <div id="about"></div>
+        <h1> About </h1>
+        <div class="about">
+            <div class="bubble1">
+                <h2 class="bubble-text">A computer science student interested in algorithms and the interaction between software usage with different UI/UX design.</h2>
+                <div class="bubble2"></div>
+                <!-- Image from https://undraw.co/ -->
+                <img src="images/undraw_modern_design_v3wv.svg" class="mobile-img" alt="Man standing next to a large phone which has profile style icons on it">
+            </div>
+        </div>
+        
+        
+        
+        
+        <!-- The main branch where all the projects are -->
+        <div id="projects"></div>
+        <h1>Projects</h1>
+        <main>
+            <div class="card">
+                <div class="card-img" style="background-image: url('images/gameBeetle.png')">
+                </div>
+                <div class="card-txt">
+                    <h3>Side-scroller game</h3>
+                    <p> This was the first game I ever created. It is a little beatle that has to collect sticks and make it to camp. If he falls or is stung by a wasp you loose a life. You can check out the game on github or play it on the website below!
+                    </p>
+                </div>
+                <div class="card-link">
+                    <a href="https://simasces.github.io/beetleGame/" target="_blank">Website</a>
+                    <a href="https://github.com/SimasCes/beetleGame" target="_blank">Github</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-img" style="background-image: url('images/pixelRun.png'); background-position: left;">
+                </div>
+                <div class="card-txt">
+                    <h3>pixelRun</h3>
+                    <p> pixelRun is an augmented reality app designed for runners. This was a team of 6 individuals working on this project. It was very focused on design and production of an app. We completed market research, testing, working in an agile environment, and more. The app is designed for runners to see coins on their trial while having a break in the middle of their run. When a preditermined amount of coins is collected, trophies are earned. The app was created to try and motivate individuals to run.
+                    </p>
+                </div>
+                <div class="card-link">
+                    <a href="http://doc.gold.ac.uk/usr/510/" target="_blank">Website</a>
+                    <a href="Report/pixelRunReport.pdf" target="_blank">Report</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-img" style="background-image: url('images/website.png'); background-position: left;">
+                </div>
+                <div class="card-txt">
+                    <h3>Portfolio Website</h3>
+                    <p> A personal portfolio website created from scratch to showcase my work. All of the elements were thought out before being implemented and only HTML and CSS was ultimately used (to see if you would really need JavaScript for , which the answer to ended up being no, JS is not needed for some projects). You can check out the readme in the github repository for more information on the site itself!
+                    </p>
+                </div>
+                <div class="card-link">
+                    <a href="https://github.com/SimasCes/SimasCes.github.io" target="_blank">Github</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-img" style="background-image: url('images/vis.png'); background-size: 150%">
+                </div>
+                <div class="card-txt">
+                    <h3>Data Visualisation</h3>
+                    <p> Worked as a pair to build upon some already existing visualisation, and incorporated more into the web application. This was done using JavaScript and there are different types of graphs and ways of building visualisations explored. p5.js was used as the main library.
+                    </p>
+                </div>
+                <div class="card-link">
+                    <a href="https://simasces.github.io/VisualisationYear1/" target="_blank">Website</a>
+                    <a href="https://github.com/SimasCes/VisualisationYear1" target="_blank">Github</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-img" style="background-image: url('images/spellcheck.png')">
+                </div>
+                <div class="card-txt">
+                    <h3>Spell Checker</h3>
+                    <p>This is a Java program. It uses the Levenshtein algorithm and takes a file as a command line argument and it goes through the words checking if any are not in the dictionary. It then offer the user to either enter a replacement, add the word to the dictionary, or select a word from the list of suggestions. The correct spell-checked file is stored in a different file (does not overwrite original). The code is available to be downloaded on Github.
+                    </p>
+                </div>
+                <div class="card-link">
+                    <a href="https://github.com/SimasCes/SpellChecker" target="_blank">Github</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-img" style="background-image: url('images/Python_Hangman.png')">
+                </div>
+                <div class="card-txt">
+                    <h3>Hangman</h3>
+                    <p>This is a hangman game created in python. It was a way for me to learn python and practice the code I was learning. The code is available to be downloaded on Github. You have to enter a secret word, and then another individual has to guess it (all completed in terminal).
+                    </p>
+                </div>
+                <div class="card-link">
+                    <a href="https://github.com/SimasCes/Python-Hangman" target="_blank">Github</a>
+                </div>
+            </div>
+            
+        </main>
+        
+        
+        
+        
+        <!-- A secondary curve which the contact me is in-->
+        <div class="curve">
+            <svg viewBox="0 0 1440 319"><path fill-opacity="1" d="M0,160L40,181.3C80,203,160,245,240,261.3C320,277,400,267,480,250.7C560,235,640,213,720,208C800,203,880,213,960,202.7C1040,192,1120,160,1200,165.3C1280,171,1360,213,1400,234.7L1440,256L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+            <!-- Image from https://undraw.co/ -->
+            <img src="images/undraw_programming_2svr.svg" class="programmer-img" alt="Programmer sitting, you see his back and 6 screens (3 at the top 3 at the bottom)">
+            <h2 class="contact" id="contactMe">Contact Me</h2>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/simas-cesnauskas-a9931b168/" target="_blank"><img src="images/LinkedIn.svg" class="icon-img" alt="LinkedIn Icon"></a>
+                <a href="https://github.com/SimasCes" target="_blank"><img src="images/Github.svg" class="icon-img" alt="Github icon"></a>
+                <a href="CV/CV.pdf" target="_blank"><img src="images/CV.svg" class="icon-img" alt="CV icon"></a>
+                <a href="mailto:simasces7@gmail.com"><img src="images/Email.svg" class="icon-img" alt="Mail icon"></a>
+            </div>
+        </div>
+        
+        
+        
+        
+        <!-- The footer for all rights reserved -->
+        <footer>© Simas Cesnauskas. All rights reserved</footer>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

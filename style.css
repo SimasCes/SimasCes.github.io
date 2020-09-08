@@ -1,0 +1,444 @@
+        /* To set general variables and body general settings */
+:root
+{
+    --text-col: #53A89A;
+    --font: Tahoma, Helvetica, Futura, sans-serif;
+    --background-col: #D6DFEB;
+    --curve-col: #43506D;
+    --bottom-card: #E5E5E5;
+}
+
+html
+{
+    /* For smooth scrolling from nav */
+    scroll-behavior: smooth;
+}
+
+body
+{
+    overflow-x: hidden;
+    margin: 0;
+    font-family: var(--font);
+    background-color: var(--background-col);
+}
+
+h1
+{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--text-col);
+    text-decoration: underline;
+}
+
+/* For a custom scroll bar */
+body::-webkit-scrollbar
+{
+    width: 0.4rem;
+}
+
+body::-webkit-scrollbar-track
+{
+    background: var(--curve-col);
+}
+
+body::-webkit-scrollbar-thumb
+{
+    background: var(--text-col);
+}
+
+
+
+
+
+
+
+
+            /* For the nav */
+
+nav 
+{   
+    list-style-type: none;
+    margin-right: 2vw;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 50px;
+    background-color: var(--curve-col);
+    opacity: 80%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 3;
+    
+}
+
+li a 
+{
+    font-size: 26px;
+    color: var(--text-col, #fff);
+    padding: 8px 10px;
+    margin-right: 20px;
+    text-decoration: none;
+    position: relative; 
+    top: 0.6vw;
+}
+
+li a:hover:not(.active) 
+{
+    color: var(--bottom-card);
+}
+
+
+/* For the nav scrolling to certain sections */
+#about, #projects
+{
+    height: 20px;
+}
+
+
+
+
+
+
+
+
+        /* For the curve div at the top */
+.curve
+{
+    background-color: var(--curve-col);
+    color: var(--text-col, #fff);
+    text-align: center;
+}
+
+.curve h1
+{
+    font-size: 6rem;
+    margin: 0 18rem 0 0;
+    text-decoration: none;
+}
+
+.curve h2
+{
+    font-size: 4rem;
+    font-family: var(--font);
+    margin: 0 0 0 23rem;
+}
+
+.curve svg
+{
+    /* So the svg takes up whole width */
+    display: block;
+    fill: var(--background-col);
+}
+
+/* For the title text to have an outline */
+.outline_text
+{
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--text-col);
+}
+
+
+
+
+
+
+
+
+            /* For the About section */
+
+.about
+{
+    height: 630px;
+}
+
+.bubble1
+{
+    background-color: var(--curve-col);
+    height: 400px;
+    width: 410px;
+    /* Used https://9elements.github.io/fancy-border-radius/full-control.html#47.77.16.9-84.84.56.16-. to get the fancy border radius look for when hovering over a navigation link */
+    border-radius: 30% 70% 70% 30% / 30% 37% 63% 70%;
+    left: -10vw;
+    position: relative;
+}
+
+.bubble2
+{
+    background-color: var(--curve-col);
+    height: 400px;
+    width: 410px;
+    /* Used https://9elements.github.io/fancy-border-radius/full-control.html#47.77.16.9-84.84.56.16-. to get the fancy border radius look for when hovering over a navigation link */
+    border-radius: 57% 43% 63% 37% / 58% 71% 29% 42%;
+    top: 14vw;
+    right: -90vw;
+    position: relative;
+}
+
+.bubble-text
+{
+    padding: 10vw 0vw 0vw 35vw;
+    width: 40vw;
+    position: absolute;
+    color: var(--text-col);
+}
+
+.mobile-img
+{
+    width: 90%;
+    position: absolute;
+    padding-left: 80vw;
+    top: 0;
+    padding-top: 17vw; 
+}
+
+
+
+
+
+
+
+
+            /* For the cards (projects are on cards) / Projects section */
+
+main
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card
+{
+    width: 330px;
+    height: 700px;
+    background-color: var(--curve-col);
+    margin: 6vw 2vw 2vw 2vw;
+    border-radius: 45px;
+    box-shadow: 4px 4px 12px gray; 
+}
+
+.card-img
+{
+    width: 100%;
+    height: 40%;
+    border-radius: 45px 45px 0px 0px;
+    background: no-repeat;
+    background-position: center;
+    background-size: 159%;
+}
+
+.card-txt
+{
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+}
+
+.card-txt h3
+{
+    border-radius: 45px 45px 45px 45px;
+    color: var(--curve-col);
+    background-color: var(--bottom-card);
+}
+
+.card-txt p
+{
+    padding: 5px;
+    padding: 0px 20px 0px 20px;
+    height: 290px;
+    color: var(--bottom-card);
+}
+
+.card-link
+{
+    display: grid;
+    /*    Change this wo however many links you have on each project*/
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    background-color: var(--bottom-card);
+    height: 9%;
+    border-radius: 0px 0px 45px 45px;
+}
+
+.card-link a
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    text-decoration: none;
+    color: var(--curve-col);    
+}
+
+.card-link a:hover
+{
+    color: var(--text-col);
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+
+            /* For the Contact Me section */
+
+
+
+.programmer-img
+{
+    width: 36%;
+    position: absolute;
+    left: 0;
+    padding-left: 20px;
+}
+
+.contact
+{
+    text-align: center;
+    padding-left: 18vw;
+}
+
+.icons
+{    
+    padding-left: 45vw;; 
+    height: 200px;
+}
+
+.icon-img
+{
+    padding: 10px;
+    padding-top: 40px;
+}
+
+
+
+
+
+
+
+
+            /* Footer */
+footer
+{
+    text-align: left;
+    background-color: var(--curve-col);
+    font-size: 10px;
+    padding: 6px;
+}
+
+
+
+
+
+
+
+
+            /* To make the elements as responsive as possible */
+@media screen and (max-width: 1200px)
+{
+    /* For the curve div at the top */
+    .curve h1
+    {
+        font-size: 4rem;
+    }
+    .curve h2
+    {
+        font-size: 2rem;
+    }
+    
+    /* For the About section */
+    .mobile-img
+    {
+        padding-top: 30vw;
+        width: 60%;
+    }
+    
+    h1
+    {
+        font-size: 2rem;
+    }
+    
+    /* For the contact me section */
+    
+    #contactMe
+    {
+        font-size: 2rem;
+        padding-left: 50px;
+        padding-right: 100px;
+    }
+    
+    .icon-img
+    {
+        width: 15%; 
+    }
+    
+    .icons
+    {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    /* For the curve div at the top */
+    .curve h1
+    {
+        font-size: 3rem;
+        margin: 0 8rem 0 0;
+    }
+    .curve h2
+    {
+        font-size: 1rem;
+        margin: 0 0 0 12rem;
+    }
+    
+    .outline_text
+    {
+        color: var(--text-col);
+        -webkit-text-stroke-width: 0px;
+    }
+    
+    /* For the About section */
+    .mobile-img
+    {
+        padding-top: 50vw;
+        width: 40%;
+        padding-left: 75vw;
+    }
+    
+    h1
+    {
+        font-size: 2rem;
+    }
+    
+    /* For the contact me section */
+    #contactMe
+    {
+        font-size: 1.5rem;
+        padding-left: 50px;
+        padding-right: 0px;
+    }
+    
+    .icon-img
+    {
+        width: 15%;
+        padding-bottom: 0;
+    }
+    
+    .icons
+    {
+        height: 100px;
+    }
+}
+
+
+
+
+
+
+
