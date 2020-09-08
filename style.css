@@ -347,6 +347,14 @@ footer
     }
 }
 
+@media screen and (max-width: 1500px)
+{
+    .programmer-img
+    {
+        width: 30%;
+    }
+}
+
 @media screen and (max-width: 1200px)
 {
     /* For the curve div at the top */
