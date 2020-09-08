@@ -2,6 +2,8 @@
 
 This website was developed as a personal portfolio to showcase my work. it is made from scratch and uses no JavaScript! I wanted to try push CSS and HTML as much as I oculd without JS and it worked out I did not need to use JS at all. Below are inspirations which helped me create the website, any images I used and where I got them, and any online tools.
 
+The link https://simasces.github.io/ is used to find the portfolio.
+
 
 
 ###### This is all accessed September 2020 (hopefully no links stop working after this)
