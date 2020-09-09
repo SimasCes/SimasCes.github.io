@@ -291,7 +291,7 @@ main
 
 .programmer-img
 {
-    width: 36%;
+    width: 34%;
     position: absolute;
     left: 0;
     padding-left: 20px;
@@ -448,7 +448,7 @@ footer
     
     .icons
     {
-        padding-right: 5vw;
+        padding-right: 15vw;
         height: 100px;
     }
 }
