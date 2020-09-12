@@ -49,4 +49,4 @@ The link https://simasces.github.io/ is used to find the portfolio.
 * https://9elements.github.io/fancy-border-radius/.  (for advanced CSS borders)
 * https://undraw.co/. (for svg images (the 2 used on my website))
 * https://icons8.com/icons/. (for free svg icons, only used the github icon)
-* https://www.figma.com/. (free tool where I created all of the contact me icons)
+* https://www.figma.com/. (free tool where I created all of the contact my icons)
